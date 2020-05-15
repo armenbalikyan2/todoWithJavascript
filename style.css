@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    height: 70px;
+    min-width: 1260px;
+    background: #2C353E;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url('https://media.istockphoto.com/photos/notepad-open-with-white-blank-page-for-writing-idea-or-todo-list-a-picture-id867672394?k=6&m=867672394&s=612x612&w=0&h=I6aKquFSaiNTdhqjxgcfhRDY5mmaPjU8qnmoCBaVnug=');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 50;
+    text-align: center;
+    margin: 1rem 0 3rem;
+    font-family: 'Hind', sans-serif;
+}
+
+.input-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.addButton {
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: salmon;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.addButton:hover {
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.item-container {
+    padding: 0.5rem;
+    border-bottom: 4px solid salmon;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    width: 245px;
+}
+
+
+
+.editButton {
+    background: none;
+    outline: none;
+    border: none;
+    color: limegreen;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    opacity: 0.7;
+}
+
+.deleteButton {
+    background: none;
+    outline: none;
+    border: none;
+    color: #E00;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    opacity: 0.7;
+}
