@@ -2,7 +2,7 @@ header {
     display: flex;
     height: 70px;
     min-width: 1260px;
-    background: #2C353E;
+    background: #a5adb0;
     border: 1px solid #000000;
     box-sizing: border-box;
 }
@@ -40,6 +40,7 @@ h1 {
     border: none;
     height: 50px;
     border-radius: 25px;
+    background-color: #E4E4E2;
     width: 350px;
     margin: 0.25rem;
     transition: .5s;
@@ -49,14 +50,18 @@ h1 {
 .addButton {
     outline: none;
     border: none;
-    height: 50px;
-    border-radius: 25px;
-    width: 50px;
+    height: auto;
+    border-radius: 50px;
+    width: auto;
+    padding: 15px;
     background-color: salmon;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     transition: .5s;
     margin: 0.25rem;
+    font-size: 1.0rem;
+    font-family: 'Hind', sans-serif;
+
 }
 
 .addButton:hover {
@@ -78,25 +83,20 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-.input {
-    background: none;
-    outline: none;
-    border: none;
-    font-size: 1.4rem;
-    width: 245px;
-}
-
-
-
 .editButton {
-    background: none;
     outline: none;
     border: none;
-    color: limegreen;
-    font-size: 1.4rem;
-    font-family: 'Hind', sans-serif;
-    margin: 0 0.5rem;
+    height: auto;
+    border-radius: 50px;
+    width: auto;
+    padding: 15px;
+    background-color: limegreen;
+    color: whitesmoke;
     cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+    font-size: 1.0rem;
+    font-family: 'Hind', sans-serif;
 }
 
 .editButton:hover {
@@ -104,14 +104,21 @@ h1 {
 }
 
 .deleteButton {
-    background: none;
     outline: none;
     border: none;
-    color: #E00;
-    font-size: 1.4rem;
-    font-family: 'Hind', sans-serif;
+    height: auto;
+    border-radius: 50px;
+    width: auto;
+    padding: 15px;
+    background-color: red;
+    color: whitesmoke;
     cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+    font-size: 1.0rem;
+    font-family: 'Hind', sans-serif;
 }
+
 
 .deleteButton:hover {
     opacity: 0.7;

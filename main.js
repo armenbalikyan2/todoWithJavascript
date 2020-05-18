@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-var inputValue = document.querySelector('.input');
+let inputValue = document.querySelector('.input');
 const add = document.querySelector('.addButton');
 
 if (window.localStorage.getItem('tasks') == undefined) {
@@ -7,29 +7,30 @@ if (window.localStorage.getItem('tasks') == undefined) {
   window.localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-var tasksEX = window.localStorage.getItem('tasks');
-var tasks = JSON.parse(tasksEX);
+let tasksEX = window.localStorage.getItem('tasks');
+let tasks = JSON.parse(tasksEX);
 
 class task {
   constructor(name) {
     this.createItem(name);
   }
+
   createItem(name) {
-    var itemBox = document.createElement('div');
+    let itemBox = document.createElement('div');
     itemBox.classList.add('item-container');
 
-    var input = document.createElement('input');
+    let input = document.createElement('input');
     input.type = 'text';
     input.disabled = true;
     input.value = name;
     input.classList.add('input');
 
-    var edit = document.createElement('button');
+    let edit = document.createElement('button');
     edit.classList.add('editButton');
     edit.innerHTML = 'EDIT';
     edit.addEventListener('click', () => this.edit(input, name));
 
-    var remove = document.createElement('button');
+    let remove = document.createElement('button');
     remove.classList.add('deleteButton');
     remove.innerHTML = 'REMOVE';
     remove.addEventListener('click', () => this.remove(itemBox, name));
@@ -76,8 +77,8 @@ function check() {
   }
 }
 
-for (var v = 0; v < tasks.length; v++) {
+for (let v = 0; v < tasks.length; v++) {
   new task(tasks[v]);
 }
 
-new task('sport');
+new task('Sleep');
